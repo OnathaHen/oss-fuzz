@@ -41,7 +41,11 @@ auto/configure \
     --with-http_random_index_module \
     --with-http_secure_link_module \
     --with-http_degradation_module \
-    --with-http_stub_status_module
+    --with-http_stub_status_module \
+    --with-http_slice_module \
+    --with-stream \
+    --with-pcre \
+    --with-debug 
 
 make -f objs/Makefile fuzzers
 

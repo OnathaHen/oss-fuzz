@@ -30,9 +30,8 @@ extern "C" {
 
 static char configuration[] =
 "error_log stderr emerg;\n"
-"trace on;\n"
 "worker_rlimit_nofile 8192;\n"
-"pid logs/nginx.pid;\n"
+"pid /tmp/nginx.pid;\n"
 "remote_admin off;\n"
 "events {\n"
 "    worker_connections 2;\n"

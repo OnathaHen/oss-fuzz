@@ -52,6 +52,7 @@ extern "C" {
 #endif
 
 static char configuration[] =
+"pid /tmp/nginx.pid;\n"
 "events {\n"
 "    worker_connections 4;\n"
 "    multi_accept off;\n"
